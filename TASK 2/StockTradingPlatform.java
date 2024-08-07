@@ -75,6 +75,7 @@ public class StockTradingPlatform {
             System.out.println("2. Sell stock");
             System.out.println("3. Display balance");
             System.out.println("4. Exit");
+            System.out.println("Enter your choice: ");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -99,8 +100,8 @@ public class StockTradingPlatform {
                     break;
                 default:
                     System.out.println("Invalid choice.");
+                    scanner.close();
             }
-            scanner.close();
         }
     }
 }
